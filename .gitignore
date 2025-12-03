@@ -1,0 +1,20 @@
+# --- Environments ---
+venv/
+.venv/
+env/
+
+# --- Secrets (CRITICAL) ---
+.env
+
+# --- Generated Data (Artifacts) ---
+synthetic_pdfs/
+*.csv
+*.pdf
+
+# --- Python Cache (Junk) ---
+__pycache__/
+*.py[cod]
+
+# --- OS System Files ---
+.DS_Store
+Thumbs.db

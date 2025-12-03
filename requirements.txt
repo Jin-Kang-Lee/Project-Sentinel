@@ -1,0 +1,23 @@
+#Step 1: Data Generation ---
+
+pandas
+faker
+reportlab
+
+#Step 2: The AI "Eyes" (OCR & Vision) ---
+
+llama-parse
+llama-index-core
+python-dotenv
+
+#Step 3: The "Brain" (Orchestration) ---
+
+langgraph
+langchain
+langchain-openai
+langchain-community
+
+#Step 4: The Interface (UI) ---
+
+streamlit
+watchdog
