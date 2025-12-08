@@ -1,6 +1,4 @@
 # Project-Sentinel
-Automated KYC &amp; Wealth Onboarding Pipeline
-
 An autonomous agentic workflow that automates Customer Due Diligence (CDD) and Wealth Onboarding for financial institutions.
 
 # The Problem
