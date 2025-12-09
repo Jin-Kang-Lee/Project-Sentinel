@@ -1,4 +1,4 @@
-# Project-Sentinel
+# Sentinel: Automated KYC & Wealth Onboarding Engine to detect AML
 An autonomous agentic workflow that automates Customer Due Diligence (CDD) and Wealth Onboarding for financial institutions.
 
 # The Problem
