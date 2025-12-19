@@ -1,23 +1,27 @@
-#Step 1: Data Generation ---
+#Step 1: Data Generation
 
 pandas
 faker
 reportlab
 
-#Step 2: The AI "Eyes" (OCR & Vision) ---
+#Step 2: The AI "Eyes" (OCR & Vision)
 
 llama-parse
 llama-index-core
 python-dotenv
 
-#Step 3: The "Brain" (Orchestration) ---
+#Step 3: The "Brain" (Orchestration)
 
 langgraph
 langchain
 langchain-openai
 langchain-community
 
-#Step 4: The Interface (UI) ---
+
+#Step 4: The "Lawyer" (RAG Database)
+faiss-cpu
+
+#Step 5: The Interface (UI)
 
 streamlit
 watchdog

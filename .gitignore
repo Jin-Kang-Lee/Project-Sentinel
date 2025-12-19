@@ -18,3 +18,9 @@ __pycache__/
 # --- OS System Files ---
 .DS_Store
 Thumbs.db
+
+# --- faiss index files ---
+*.faiss
+*.pkl
+
+wealth_products.txt
