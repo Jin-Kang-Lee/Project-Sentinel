@@ -1,5 +1,5 @@
 # Sentinel: Automated KYC & Wealth Onboarding Engine to detect AML
-An autonomous agentic workflow that automates Customer Due Diligence (CDD) and Wealth Onboarding for financial institutions.
+An autonomous agentic workflow that automates Customer Due Diligence (CDD) and Wealth Onboarding for financial institutions to mitigate Anti-Money Laundering (AML).
 
 # The Problem
 Financial institutions face a massive bottleneck: Manual Document Review.
