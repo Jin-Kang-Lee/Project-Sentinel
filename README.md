@@ -1,20 +1,21 @@
 # Sentinel: Automated KYC & Wealth Onboarding Engine to detect AML
 An autonomous agentic workflow that automates Customer Due Diligence (CDD) and Wealth Onboarding for financial institutions.
+Designed to eliminate the 90-day onboarding bottleneck by replacing manual due diligence with autonomous agents. Delivers a MAS 626-compliant, audit-ready workflow that slashes processing time to under 24 hours.
 
 # The Problem
-Financial institutions face a massive bottleneck: Manual Document Review.
-High-net-worth onboarding requires analysts to manually cross-reference thousands of bank statements against strict Anti-Money Laundering (AML) laws. This process is:
-- Slow: Takes days to onboard one client.
-- Expensive: Requires teams of human analysts.
-- Risky: Humans miss subtle red flags, leading to regulatory fines.
+Financial institutions face a massive bottleneck in High-Net-Worth & Corporate Onboarding. Compliance teams must manually cross-reference thousands of pages of unstructured bank statements against strict Anti-Money Laundering (AML) laws.
+- 120-Day Cycles: Corporate and Private Banking onboarding now averages 90–120 days, causing a 70% client drop-off rate (Fenergo 2025).
+- Massive Costs: Institutions spend up to $25,000 per corporate client on manual due diligence and "stare-and-compare" verification.
+- Crypto Scalability: Crypto exchanges face 50–80% abandonment and massive backlogs during market surges because human teams cannot scale linearly with user volume.
+- Regulatory Risk: Manual fatigue leads to missed red flags, resulting in billions in fines for non-compliance with MAS 626, BSA, and MiCA frameworks.
 
 # The Solution
-Project Sentinel is an AI-native compliance officer. It automates the forensic review process by deploying a team of AI agents that can read, reason, and decide.
+Sentinel is not just a chatbot; it is an autonomous, event-driven compliance officer. It fundamentally changes the workflow by decoupling Probabilistic AI (reading documents) from Deterministic Logic (calculating risk), ensuring decisions are legally defensible.
 Instead of a human analyst, Sentinel:
-Reads unstructured PDFs using Computer Vision.
-Calculates financial risk using deterministic math (no AI hallucinations).
-Verifies compliance against real-world regulations (MAS Notice 626).
-Decides whether to onboard or reject the client instantly.
+1. Ingest: Extracts data from unstructured PDFs (Source of Wealth, Bank Statements) using Vision AI (LlamaParse).
+2. Verify: Calculates financial risk ratios using strict Python logic (Zero Hallucination).
+3. Audit: Cross-references findings against MAS Notice 626 regulations using RAG.
+4. Decide: Instantly flags high-risk entities or approves standard cases for onboarding.
 
 
 
