@@ -5,7 +5,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
 
 # Import your new strict data model
-from data_contract import FinancialExtraction
+from src.data.data_contract import FinancialExtraction
 
 load_dotenv()
 

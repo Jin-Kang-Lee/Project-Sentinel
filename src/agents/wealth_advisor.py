@@ -47,7 +47,7 @@ class WealthAdvisor:
 
         self.retriever = self.vectorstore.as_retriever(search_kwargs={"k": 3})
 
-        self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.7)
+        self.llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.2)
         
         template = """You are a Wealth Manager at DBS.
         Based on the client's profile, recommend suitable financial products.
@@ -60,11 +60,15 @@ class WealthAdvisor:
         {context}
         
         INSTRUCTIONS:
-        1. Recommend 2 products that match the client's risk level.
-        2. Explain WHY you chose them.
-        3. Be professional but persuasive.
+        1. Recommend a suitable number of products that match the client's risk level.
+        2. Use only products present in the AVAILABLE PRODUCTS list.
+        3. Output MUST be plain text with one product per line and nothing else.
+        4. Use this exact format for each line:
+           Wealth Product N: <What it is.> <Why recommended.>
+        5. Start each product on a NEW LINE. Do not place multiple products on one line.
+        6. Keep each line under 35 words total.
         
-        YOUR RECOMMENDATION:"""
+        OUTPUT:"""
         
         prompt = ChatPromptTemplate.from_template(template)
         

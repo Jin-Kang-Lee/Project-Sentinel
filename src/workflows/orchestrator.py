@@ -3,10 +3,10 @@ from typing import TypedDict, Literal
 from langgraph.graph import StateGraph, END
 
 # --- Import your "Specialists" ---
-from extractor import extract_data
-from risk_engine import RiskEngine
-from legal_agent import LegalAgent
-from wealth_advisor import WealthAdvisor
+from src.io.extractor import extract_data
+from src.risk.risk_engine import RiskEngine
+from src.agents.legal_agent import LegalAgent
+from src.agents.wealth_advisor import WealthAdvisor
 
 # Initialize the logic classes
 print("🚀 System: Initializing Agents...")
@@ -143,16 +143,21 @@ workflow.add_edge("finalizer", END)
 
 app = workflow.compile()
 
-# --- Test Block ---
+# --- CLI Entry Point ---
 if __name__ == "__main__":
-    # You can change this to any PDF in your folder to test
-    test_pdf = "synthetic_pdfs/Statement_C011.pdf" 
-    
-    if os.path.exists(test_pdf):
-        print(f"🚀 Launching Sentinel Pipeline for {test_pdf}...")
-        result = app.invoke({"pdf_path": test_pdf})
-        print("\n-----------------------------------------")
-        print("✅ WORKFLOW COMPLETE")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="Run the Sentinel pipeline on a PDF.")
+    parser.add_argument("--pdf", required=True, help="Path to the bank statement PDF")
+    args = parser.parse_args()
+
+    pdf_path = args.pdf
+    if os.path.exists(pdf_path):
+        print(f"dYs? Launching Sentinel Pipeline for {pdf_path}...")
+        result = app.invoke({"pdf_path": pdf_path})
         print("-----------------------------------------")
+        print("?o. WORKFLOW COMPLETE")
+        print("-----------------------------------------")
+        print(result)
     else:
-        print(f"❌ File {test_pdf} not found.")
+        print(f"??O File {pdf_path} not found.")

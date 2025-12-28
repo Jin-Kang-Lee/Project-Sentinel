@@ -25,3 +25,9 @@ faiss-cpu
 
 streamlit
 watchdog
+
+#Step 6: API
+
+fastapi
+uvicorn
+python-multipart
